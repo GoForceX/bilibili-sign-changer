@@ -7,7 +7,7 @@ follower = -1
 
 if __name__ == '__main__':
     while True:
-        time.sleep(2)
+        time.sleep(30)
         link = "https://api.bilibili.com/x/member/web/sign/update"
         if not check_token.check(offline_token.get_token()['SESSDATA']):
             qrlogin.login()
